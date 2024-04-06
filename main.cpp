@@ -9,6 +9,7 @@
 using namespace std;
 
 int main() {
+    std::cout << std::endl;
     string name;
     cout << "Enter your name: ";
     cin >> name;
@@ -24,5 +25,7 @@ int main() {
         string name2 = player->getName();
         std::cout << name2 << " Wins." << std::endl;
     }
+
+    std::cout << std::endl;
     return 0;
 };
