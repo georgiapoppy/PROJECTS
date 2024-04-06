@@ -9,7 +9,7 @@ using namespace std;
 
 class Computer : public Player {
        public:
-            char makeMove() override;
+            string makeMove() override;
             string getName() override;
 };
 

@@ -10,11 +10,10 @@ Human::Human(string name1) {
     name = name1;
 }
 
-char Human::makeMove() {
-    char move; 
-    std::cout << "Enter move: ";
+string Human::makeMove() {
+    string move; 
+    std::cout << "Enter move (Rock, Paper, or Scissors): ";
     std::cin >> move;
-    std::cout << std::endl;
     return move;
 }
 

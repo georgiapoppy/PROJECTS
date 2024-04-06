@@ -13,7 +13,7 @@ class Human : public Player {
        public:
           Human();
           Human(string name1);
-          char makeMove() override;
+          string makeMove() override;
           string getName() override;
 };
 

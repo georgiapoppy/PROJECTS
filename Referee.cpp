@@ -6,12 +6,12 @@
 Referee::Referee() {};
 
 Player* Referee::refGame(Player * player1, Player * player2) {
-    char move1 = player1->makeMove();
-    char move2 = player2->makeMove();
+    string move1 = player1->makeMove();
+    string move2 = player2->makeMove();
     if (move1 == move2) {
         return nullptr;
     }
-    else if ((move1 == 'R' && move2 == 'S') || (move1 == 'S' && move2 == 'P') || (move1 == 'P' && move2 == 'R')) {
+    else if ((move1 == "Rock" && move2 == "Scissors") || (move1 == "Scissors" && move2 == "Paper") || (move1 == "Paper" && move2 == "Rock")) {
         return player1;
     }
     else {
